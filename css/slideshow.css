@@ -1,0 +1,59 @@
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  box-sizing:border-box;
+  position: relative;
+  float: left;
+
+}
+.slideshow-container img
+{
+  -webkit-box-shadow: 0px 0px 26px -3px rgba(144,146,158,0.82);
+-moz-box-shadow: 0px 0px 26px -3px rgba(144,146,158,0.82);
+box-shadow: 0px 0px 26px -3px rgba(144,146,158,0.82);
+  width: 640px;
+  height: 360px;
+  margin-top: 60px;
+}
+
+/* Caption text */
+.text {
+  box-sizing:border-box;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.active {
+  box-sizing:border-box;
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}

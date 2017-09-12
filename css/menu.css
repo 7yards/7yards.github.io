@@ -1,0 +1,115 @@
+/* primary_navbar menu fixed to top*/
+
+.logo_img
+{
+	float:left;
+	margin-left:120px;
+	height: 60px;
+	width: 96px;
+}
+
+#primary_navbar
+{
+  position: fixed;
+  top:0;
+  left: 0;
+  margin: 0;
+  height: auto;
+  width:100%;
+  background-color: #439df7;
+  /*background-color: rgb(165, 60, 60);*/
+  font-weight: lighter;
+  z-index: 2;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(87,85,87,1);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(87,85,87,1);
+  box-shadow: 0px 0px 7px 0px rgba(87,85,87,1);
+}
+
+#primary_nav_wrap ul nav_menu
+{
+  font-size: 16px;
+	list-style:none;
+	float:left;
+}
+.comp_name
+{
+  vertical-align: middle;
+	font-size: 24px;
+  height: 48px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+#primary_nav_wrap ul a
+{
+	display:block;
+  min-width: 148px;
+	color: white;
+	text-decoration:none;
+	font-family:"Lobster";
+  text-align: center;
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+}
+
+li
+{
+  list-style-type: none;
+}
+.menu a
+{
+  letter-spacing: 1px;
+  -webkit-transition: letter-spacing 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: letter-spacing 0.5s ease;
+}
+.menu a:hover
+{
+  font-weight: bolder;
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+
+#nav
+{
+  width: 75%;
+  margin: 0 auto;
+}
+
+
+.secondary
+{
+  margin-left: 240px;
+}
+
+
+
+#footer
+{
+  background-color: #8e9eab;
+  padding: 24px;
+  display: block;
+	overflow: auto;
+  box-sizing: border-box;
+}
+.fooblock
+{
+  /*background-color: #243b55;*/
+  width:500px;
+  display: block;
+  float: left;
+}
+.cinfo
+{
+  padding: 12px;
+  float: left;
+  width:300px;
+  color:whitesmoke;
+  font-weight: lighter;
+  font-size: 14px;
+  font-family: "Open Sans";
+}

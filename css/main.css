@@ -4,16 +4,27 @@ html,body
 	padding: 0;
 }
 
+:root{
+	--main-brown-primary:#795548;
+	--main-brown-secondary:#4E342E;
+	--main-brown-bg:#eacda3;
+	--main-green-primary:#4CAF50;
+	--main-green-secondary:#1B5E20;
+	--main-lightgreen-primary:#8BC34A;
+	--main-lightgreen-secondary:#558B2F;
+
+}
 
 
 #slideshow-div
 {
-
-	background-image: linear-gradient(to bottom,#232526,#414345);
+	background-color: white;
+	/*background-image: linear-gradient(to bottom,#232526,#414345);*/
 	clear: both;
-	padding: 64px;
+	padding-bottom: : 64px;
 	display: block;
 	overflow: auto;
+	box-sizing: border-box;
 	/*background-color: #243B55;*/
 }
 #trending{
@@ -58,6 +69,10 @@ html,body
 	height: 2px;
 	background: white;
 	/*background-image: linear-gradient(to left,#56B4D3,#B5AC49);*/
+}
+
+.icon{
+	display: none;
 }
 
 .layoutBox
@@ -105,20 +120,25 @@ html,body
 
 #category
 {
-	padding: 60px;
+	box-sizing: border-box;
 	display: block;
+	padding-top: 64px;
+	padding-bottom: 64px;
 	overflow: auto;
-	background-color: #243b55;
+	color:white;
+	background-color: var(--main-green-primary);
 }
 
 #new-arrivals
 {
+	position: relative;
 	padding-top: 60px;
+	padding-bottom: 64px;
 	box-sizing: border-box;
 	clear: both;
 	display: block;
 	overflow: auto;
-	background-color: #eacda3;
+	background-color: var(--main-brown-bg);
 }
 
 #fourth
@@ -127,7 +147,7 @@ html,body
 	height: auto;
 	padding: 12px 48px 12px 48px;
 	color:whitesmoke;
-	background-color: #243B55;
+	background-color: var(--main-green-primary);
 	box-sizing: border-box;
 }
 .description
@@ -136,20 +156,24 @@ html,body
 	line-height: 24px;
 	text-align: center;
 	font-size: 18px;
-	width: 600px;
+	max-width: 600px;
 }
 
 .content
 {
-	width: 600px;
+	max-width: 600px;
 	margin: 0 auto;
 	margin-bottom: 48px;
 }
 #fifth
 {
-	padding: 60px;
+	/*Clothing*/
+	/*padding: 60px;*/
+	box-sizing: border-box;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	display: block;
-	overflow: auto;
+	overflow: hidden;
 	background-color: #eacda3;
 }
 .featured-product {
@@ -160,15 +184,16 @@ html,body
     font-family: 'Lobster', sans-serif;
     background-color: #fff;
     padding: 10px;
-		margin-left: 24px;
+		margin-left: 60px;
     overflow: hidden;
     -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
 }
 .center_div{
-	width: 90%;
+	width: 95%;
 	margin: 0 auto;
 	height: auto;
+	overflow: auto;
 	position: relative;
 }
 .images
@@ -193,7 +218,7 @@ html,body
 	font-weight: lighter;
 	font-size: 48px;
 	text-align: center;
-	color:#3CA55C;
+	color:white	;
 }
 .hide
 {
@@ -208,4 +233,164 @@ html,body
     font-weight: bold;
     color: #373737;
     text-decoration: none;
+}
+/* primary_navbar menu fixed to top*/
+.marque{
+	z-index: 1;
+	position: absolute;
+  left: 64px;
+	bottom: 64px;
+  width:280px;
+  background-color:#009688;
+  padding:12px;
+  line-height:20px;
+  word-spacing:2px;
+  color:white;
+  font-family: "Open-sans";
+  border: 2px solid;
+  border-color:white;
+}
+.logo_img
+{
+	float:left;
+	margin-left:120px;
+	height: 60px;
+	width: 96px;
+}
+
+#primary_navbar
+{
+	background-color: var(--main-brown-secondary);
+  position: fixed;
+  top:0;
+  left: 0;
+  margin: 0;
+  height: auto;
+  width:100%;
+  font-weight: lighter;
+  z-index: 2;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(87,85,87,1);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(87,85,87,1);
+  box-shadow: 0px 0px 7px 0px rgba(87,85,87,1);
+}
+
+#primary_nav_wrap div{
+
+
+}
+#primary_nav_wrap ul nav_menu
+{
+
+  font-size: 16px;
+	list-style:none;
+	float:left;
+}
+.comp_name
+{
+  vertical-align: middle;
+	font-size: 24px;
+  height: 48px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+#primary_nav_wrap ul a
+{
+	color: var(--main-green-primary);
+	display:block;
+  min-width: 148px;
+	text-decoration:none;
+	font-family:"Lobster";
+  text-align: center;
+}
+
+#primary_nav_wrap ul li
+{
+
+	position:relative;
+	float:left;
+}
+
+@media screen and (max-width: 600px) {
+  #primary_nav_wrap a:not(:first-child) {display: none;}
+  #primary_nav_wrap a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  #primary_nav_wrap.responsive {position: relative;}
+  #primary_nav_wrap.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #primary_nav_wrap.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+li
+{
+
+  list-style-type: none;
+}
+.menu a
+{
+
+  letter-spacing: 1px;
+  -webkit-transition: letter-spacing 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: letter-spacing 0.5s ease;
+}
+.menu a:hover
+{
+  font-weight: bolder;
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+
+#nav
+{
+  width: 75%;
+  margin: 0 auto;
+}
+
+
+.secondary
+{
+  margin-left: 240px;
+}
+
+
+
+#footer
+{
+  background-color: var(--main-brown-bg);
+  padding: 24px;
+  display: block;
+	overflow: auto;
+  box-sizing: border-box;
+}
+.fooblock
+{
+  /*background-color: #243b55;*/
+  width:500px;
+  display: block;
+  float: left;
+}
+.cinfo
+{
+  padding: 12px;
+  float: left;
+  width:300px;
+  color:whitesmoke;
+  font-weight: lighter;
+  font-size: 14px;
+  font-family: "Open Sans";
 }

@@ -2,12 +2,15 @@
 @import url(https://fonts.googleapis.com/css?family=Teko:700);
 .snip1543 {
   float: left;
-  color: #672f0a;
+  color:white;
   display:inline-block;
   font-family: "Droid Serif", sans-serif;
   font-size: 12px;
-  max-width: 420px;
-  min-width: 400px;
+  max-width: 320px;
+  min-width: 320px;
+  max-height: 240px;
+  border: 10px solid white;
+  border-color:white;
   overflow: hidden;
   position: relative;
   text-align: left;
@@ -29,7 +32,7 @@
 
 .snip1543 img {
   backface-visibility: hidden;
-  max-width: 100%;
+  width: 100%;
   vertical-align: top;
 }
 

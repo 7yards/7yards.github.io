@@ -2,12 +2,13 @@
 @import url(https://fonts.googleapis.com/css?family=Teko:700);
 .snip1543 {
   float: left;
+  margin-left: 8px;
   color:white;
   display:inline-block;
-  font-family: "Droid Serif", sans-serif;
+  font-family: 'Lobster', sans-serif;
   font-size: 12px;
-  max-width: 320px;
-  min-width: 320px;
+  max-width: 280px;
+  min-width: 240px;
   max-height: 240px;
   border: 10px solid white;
   border-color:white;
@@ -103,7 +104,7 @@
 }
 
 .snip1543 h3 {
-  font-family: 'Droid Serif', sans-serif;
+  font-family: 'Lobster', sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 1em;

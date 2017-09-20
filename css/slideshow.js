@@ -17,7 +17,9 @@
 // </div>
 
 function myFunction() {
-    var x = document.getElementById("primary_nav_wrap");
+
+    console.log("onCLick");
+    var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
     } else {
@@ -29,18 +31,19 @@ function myFunction() {
 
 $(document).ready(function(){
 
-	var boxes = $(".marque");
-var i=-1;
-boxes.hide();
-var box = setInterval(function(){
-   console.log("works");
-  i=i+1;
-  var rem = i%3;
-  boxes.eq(rem-1).hide();
-  boxes.eq(rem-2).hide();
-  boxes.eq(rem).fadeToggle("2000");
+// 	var boxes = $(".marque");
+// var i=-1;
+// boxes.hide();
+// var box = setInterval(function(){
+//    console.log("works");
+//   i=i+1;
+//   var rem = i%3;
+//   boxes.eq(rem-1).hide();
+//   boxes.eq(rem-2).hide();
+//   boxes.eq(rem).fadeToggle("2000");
+//
+// },6000);
 
-},6000);
 
 	var slideIndex = 0;
 

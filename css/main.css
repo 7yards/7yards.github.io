@@ -154,6 +154,15 @@ html,body
 		align-items: center;
 		padding: 12px;
   }
+	#new-arrivals img{
+		width: 200px;
+	}
+	#category img{
+		width: 200px;
+	}
+	#clothing img{
+		width:200px;
+	}
 }
 
 .container-flex{

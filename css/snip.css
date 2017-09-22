@@ -1,14 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @import url(https://fonts.googleapis.com/css?family=Teko:700);
 .snip1543 {
-  float: left;
-  margin-left: 8px;
+  /*float: left;*/
   color:white;
-  display:inline-block;
+  /*display:inline-block;*/
   font-family: 'Lobster', sans-serif;
   font-size: 12px;
-  max-width: 280px;
-  min-width: 240px;
+  /*max-width: 280px;*/
+  /*min-width: 240px;*/
   max-height: 240px;
   border: 10px solid white;
   border-color:white;
@@ -32,9 +31,9 @@
 }
 
 .snip1543 img {
-  backface-visibility: hidden;
-  width: 100%;
-  vertical-align: top;
+  /*backface-visibility: hidden;*/
+  /*width: 100%;*/
+  /*vertical-align: top;*/
 }
 
 .snip1543:before,

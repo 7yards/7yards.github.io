@@ -19,66 +19,11 @@ html,body
 #slideshow-div
 {
 	background-color: white;
-	/*background-image: linear-gradient(to bottom,#232526,#414345);*/
 	clear: both;
 	padding-bottom: : 64px;
 	display: block;
 	overflow: auto;
 	box-sizing: border-box;
-	/*background-color: #243B55;*/
-}
-#trending{
-	font-family: "Droid Serif";
-	background-color:  #3CA55C ;
-	border: 3px solid white;
-	color: white;
-	margin-left: 96px;
-	padding-left: 20px;
-	height: auto;;
-	float: left;
-	width: auto;
-	margin-top: 60px;
-	padding-bottom: 16px;
-}
-
-
-
-.trend_img{
-	clear: both;
-	padding-top: 12px;
-}
-.product{
-	font-size: 14px;
-		float: right;
-		padding-right: 120px;
-}
-.trend_name{
-	margin-top: 24px;
-	padding: 8px;
-	font-weight: bold;
-}
-.trend_img_size{
-	border-radius: 50%;
-	height: 64px;
-	width: 64px;
-	padding: 8px;
-}
-.line
-{
-	margin-right:16px;
-	height: 2px;
-	background: white;
-	/*background-image: linear-gradient(to left,#56B4D3,#B5AC49);*/
-}
-
-.icon{
-	display: none;
-}
-
-.layoutBox
-{
-	width: 300px;
-	height: 100%;
 }
 
 #offers
@@ -92,6 +37,11 @@ html,body
 }
 .description
 {
+	color:darkgreen;
+	margin: 0 auto;
+	font-weight: lighter;
+	font-size: 14px;
+	font-family: "Open Sans";
 	padding-top: 60px;
 	line-height: 24px;
 	text-align: center;
@@ -104,66 +54,6 @@ html,body
 	max-width: 600px;
 	margin: 0 auto;
 	margin-bottom: 48px;
-}
-
-
-.featured-product {
-    position: relative;
-		margin-top: 24px;
-		display: block;
-		float: left;
-    font-family: 'Lobster', sans-serif;
-    background-color: #fff;
-    padding: 10px;
-		margin-left: 60px;
-    overflow: hidden;
-    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
-}
-.center_div{
-	width: 95%;
-	margin: 0 auto;
-	height: auto;
-	overflow: auto;
-	position: relative;
-}
-.images
-{
-	width: 80%;
-	margin: 0 auto;
-}
-0
-.text_new
-{
-	padding: 24px;
-	font-family: 'Lobster', sans-serif;
-	font-weight: lighter;
-	font-size: 48px;
-	text-align: center;
-	color:white;
-}
-.text_new1
-{
-	padding: 24px;
-	font-family: 'Lobster', sans-serif;
-	font-weight: lighter;
-	font-size: 48px;
-	text-align: center;
-	color:white	;
-}
-.hide
-{
-	opacity: 0;
-}
-.img-size{
-	width: 300px;
-
-}
-.featured-product p a {
-	text-align: center;
-    font-weight: bold;
-    color: #373737;
-    text-decoration: none;
 }
 /* primary_navbar menu fixed to top*/
 .marque{
@@ -178,90 +68,19 @@ html,body
   word-spacing:2px;
   color:white;
   font-family: "Open-sans";
-  border: 2px solid;
-  border-color:white;
+  border: 2px solid white;
 }
-.logo_img
-{
-	float:left;
-	margin-left:120px;
-	height: 60px;
-	width: 96px;
-}
-
-
-
-#primary_nav_wrap ul li
-{
-
-	position:relative;
-	float:left;
-}
-
-
-li
-{
-
-  list-style-type: none;
-}
-.topnav a
-{
-	color: var(--main-green-primary);
-  min-width: 148px;
-	text-decoration:none;
-	font-family:"Lobster";
-  text-align: center;
-	display: block;
-  letter-spacing: 1px;
-  -webkit-transition: letter-spacing 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: letter-spacing 0.5s ease;
-}
-.topnav a:hover
-{
-	color: var(--main-green-primary);
-  font-weight: bolder;
-  font-size: 18px;
-  letter-spacing: 5px;
-}
-
-.secondary
-{
-  margin-left: 240px;
-}
-
-
 
 #footer
 {
   background-color: var(--main-brown-bg);
   padding: 24px;
-  display: block;
-	overflow: auto;
-  box-sizing: border-box;
 }
-.fooblock
-{
-  /*background-color: #243b55;*/
-	margin-left: 30px;
-  max-width:480px;
-  display: block;
-  float: left;
-}
-.cinfo
-{
-  padding: 12px;
-  float: left;
-  width:300px;
-  color:: var(--main-brown-secondary);
-  font-weight: lighter;
-  font-size: 14px;
-  font-family: "Open Sans";
-}
+
 /* Add a black background color to the top navigation */
 .topnav {
 	background-color: var(--main-brown-secondary);
+	align-items: center;
   position: fixed;
 	font-family:"Lobster";
   top:0;
@@ -276,16 +95,32 @@ li
   box-shadow: 0px 0px 7px 0px rgba(87,85,87,1);
   overflow: hidden;
 }
+.topnav img{
+	width: 60px;
+	height: 40px;
+	border-radius: 10%;
+	margin: 10px;
+}
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
+		font-family:"Lobster";
+  	letter-spacing: 1px;
+	  -webkit-transition: letter-spacing 0.5s ease;
+	  -moz-transition: all 0.5s ease;
+	  -o-transition: all 0.5s ease;
+	  transition: letter-spacing 0.5s ease;
+}
+.topnav a:hover
+{
+	color: var(--main-green-primary);
+  font-weight: bolder;
+  font-size: 18px;
+  letter-spacing: 5px;
 }
 
 
@@ -294,36 +129,30 @@ li
     display: none;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
 @media screen and (max-width: 800px) {
-	.logo_img{
-		display: none;
+	#slideshow-div{
+		margin-top: 60px;
 	}
-  .topnav a:not(:nth-child(2)) {display: none;}
+	/*.topnav a:not(:first-child) {display: none;}*/
+	.topnav a:not(:nth-child(2)) {display: none;}
   .topnav a.icon {
-    float: right;
     display: block;
   }
-	#slideshow-div{
-		margin-top: 45px;
-	}
 	.marque{
 		display: none;
 	}
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 800px) {
-  .topnav.responsive {}
+	/*.topnav.responsive {position: relative;}*/
   .topnav.responsive a.icon {
-		position: fixed;
-    right: 0;
-    top: 0;
+    position: absolute;
+    right: 10;
+    top: 10;
   }
   .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
+    display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 12px;
   }
 }
 
@@ -331,18 +160,37 @@ li
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-
+}
+.contact{
+	color:darkgreen;
+	font-weight: lighter;
+	font-size: 14px;
+	font-family: "Open Sans";
+	padding: 48px;
+}
+.container-flex-vertical{
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 .flex-box-item{
 	margin: 24px;
 }
-.container-flex img{
+#category img{
+	width: 300px;
+}
+#clothing img{
+	width:300px;
+}
+#new-arrivals img{
 	width: 300px;
 }
 .featured{
-	background-color: #fff;
+	border: 10px solid white;
+	margin: 24px;
+	text-align: center;
 	font-family: 'Lobster', sans-serif;
-	padding: 10px;
 	overflow: hidden;
 	-webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);

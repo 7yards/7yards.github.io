@@ -81,67 +81,7 @@ html,body
 	height: 100%;
 }
 
-/*#name
-{
-	position: fixed;
-	z-index: 2;
-	top:130px;
-	right:0px;
-	padding: 10px;
-	font-weight: lighter;
-	writing-mode: vertical-rl;
-	transform: rotate(180deg);
-	color:#F9D423;
-	background-color: #159957;
-	text-align: right;
-	border-radius: 10px;
-	writing-mode: sideways-lr;
-	font-size: 90px;
-	text-align: left;
-	height: auto;
-	width: 120px;
-	-webkit-box-shadow: 0px 0px 7px 0px rgba(87,85,87,1);
-	-moz-box-shadow: 0px 0px 7px 0px rgba(87,85,87,1);
-	box-shadow: 0px 0px 7px 0px rgba(87,85,87,1);
-}*/
-
-#second
-{
-	box-sizing: border-box;
-	color: white;
-	padding: 1px;
-	margin-top: 120px;
-	height: 60px;
-	background-color:  #159957;
-	-webkit-box-shadow: 0px 0px 7px 0px rgba(87,85,87,1);
-  -moz-box-shadow: 0px 0px 7px 0px rgba(87,85,87,1);
-  box-shadow: 0px 0px 7px 0px rgba(87,85,87,1);
-}
-
-#category
-{
-	box-sizing: border-box;
-	display: block;
-	padding-top: 64px;
-	padding-bottom: 64px;
-	overflow: auto;
-	color:white;
-	background-color: var(--main-green-primary);
-}
-
-#new-arrivals
-{
-	position: relative;
-	padding-top: 60px;
-	padding-bottom: 64px;
-	box-sizing: border-box;
-	clear: both;
-	display: block;
-	overflow: hidden;
-	background-color: var(--main-brown-bg);
-}
-
-#fourth
+#offers
 {
 	clear: both;
 	height: auto;
@@ -165,17 +105,8 @@ html,body
 	margin: 0 auto;
 	margin-bottom: 48px;
 }
-#fifth
-{
-	/*Clothing*/
-	/*padding: 60px;*/
-	box-sizing: border-box;
-	padding-top: 60px;
-	padding-bottom: 60px;
-	display: block;
-	overflow: hidden;
-	background-color: #eacda3;
-}
+
+
 .featured-product {
     position: relative;
 		margin-top: 24px;
@@ -394,4 +325,62 @@ li
     display: block;
     text-align: left;
   }
+}
+
+.container-flex{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+.flex-box-item{
+	margin: 24px;
+}
+.container-flex img{
+	width: 300px;
+}
+.featured{
+	background-color: #fff;
+	font-family: 'Lobster', sans-serif;
+	padding: 10px;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+}
+.box-title{
+	padding: 24px;
+	font-family: 'Lobster', sans-serif;
+	font-weight: lighter;
+	font-size: 48px;
+	text-align: center;
+	color: var(--main-green-primary);
+}
+.box-title-two{
+	padding: 24px;
+	font-family: 'Lobster', sans-serif;
+	font-weight: lighter;
+	font-size: 48px;
+	text-align: center;
+	color: var(--main-brown-secondary);
+}
+#category
+{
+	padding-top: 64px;
+	padding-bottom: 64px;
+	background-color: var(--main-green-primary);
+}
+
+#new-arrivals
+{
+	padding-top: 60px;
+	padding-bottom: 64px;
+	background-color: var(--main-brown-bg);
+}
+
+#clothing
+{
+	clear: both;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #eacda3;
 }

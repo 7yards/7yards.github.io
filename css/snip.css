@@ -10,7 +10,7 @@
   /*min-width: 240px;*/
   max-height: 240px;
   border: 10px solid white;
-  border-color:white;
+  border-color:var(--main-border-color);
   overflow: hidden;
   position: relative;
   text-align: left;

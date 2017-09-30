@@ -5,14 +5,14 @@ html,body
 }
 
 :root{
-	--main-brown-primary:#795548;
-	--main-brown-secondary:#4E342E;
-	--main-brown-bg:#eacda3;
-	--main-green-primary:#4CAF50;
-	--main-green-secondary:#1B5E20;
-	--main-lightgreen-primary:#8BC34A;
-	--main-lightgreen-secondary:#558B2F;
-
+    --main-brown-primary: #795548;
+    --main-brown-secondary: #4E342E;
+    --main-brown-bg: #eacda3;
+    --main-green-primary: #4CAF50;
+    --main-green-secondary: #1B5E20;
+    --main-lightgreen-primary: #8BC34A;
+    --main-lightgreen-secondary: #558B2F;
+		--main-border-color:white;
 }
 
 
@@ -119,8 +119,8 @@ html,body
 {
 	color: var(--main-green-primary);
   font-weight: bolder;
-  font-size: 18px;
-  letter-spacing: 5px;
+  /*font-size: 18px;*/
+  /*letter-spacing: 5px;*/
 }
 
 
@@ -157,6 +157,8 @@ html,body
 	#new-arrivals img{
 		padding-top: 24px;
 		width: 200px;
+		background-position: center center;
+  	background-repeat: no-repeat;
 	}
 	#category img{
 		padding-top: 24px;
@@ -174,7 +176,7 @@ html,body
 	justify-content: space-around;
 }
 .contact{
-	color:darkgreen;
+	color:var(--main-green-primary);
 	font-weight: lighter;
 	font-size: 14px;
 	font-family: "Open Sans";
@@ -199,13 +201,13 @@ html,body
 	width: 300px;
 }
 .featured{
-	border: 10px solid white;
+	border: 10px solid var(--main-border-color);
 	margin: 24px;
 	text-align: center;
 	font-family: 'Lobster', sans-serif;
 	overflow: hidden;
 	-webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
-	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
 }
 .box-title{
 	padding: 24px;
@@ -213,7 +215,7 @@ html,body
 	font-weight: lighter;
 	font-size: 48px;
 	text-align: center;
-	color: var(--main-green-primary);
+	color: var(--main-border-color);
 }
 .box-title-two{
 	padding: 24px;
@@ -221,7 +223,7 @@ html,body
 	font-weight: lighter;
 	font-size: 48px;
 	text-align: center;
-	color: var(--main-brown-secondary);
+	color: var(--main-border-color);
 }
 #category
 {
@@ -242,5 +244,5 @@ html,body
 	clear: both;
 	padding-top: 60px;
 	padding-bottom: 60px;
-	background-color: #eacda3;
+	background-color:var(--main-brown-bg);
 }

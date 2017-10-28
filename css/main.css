@@ -73,8 +73,10 @@ html,body
 
 #footer
 {
+	color: var(--main-green-secondary);
   background-color: var(--main-brown-bg);
-  padding: 24px;
+	padding-top: 60px;
+	padding-left: 24px;
 }
 
 /* Add a black background color to the top navigation */
@@ -168,6 +170,22 @@ html,body
 		padding-top: 24px;
 		width:200px;
 	}
+	h1{
+		color: var(--main-green-primary);
+	}
+	.form{
+		max-width: 100px;
+		padding: 24px;
+		display: block;
+		margin: 0 auto;
+	}
+	.form input,textarea{
+		border:1px solid #ccc;
+		border-radius: 5px;
+		padding: 12px 20px;
+		margin: 16px;
+		max-width: 100px;
+	}
 }
 
 .container-flex{
@@ -238,6 +256,30 @@ html,body
 	padding-bottom: 64px;
 	background-color: var(--main-brown-bg);
 }
+
+.form{
+	max-width: 600px;
+	padding: 24px;
+	display: block;
+	margin: 0 auto;
+}
+.form input{
+	border:1px solid #ccc;
+	border-radius: 5px;
+	padding: 12px 20px;
+	margin: 16px;
+	min-width: 320px;
+	background-color: #F4F4F4;
+}
+.form textarea{
+	border:1px solid #ccc;
+	border-radius: 5px;
+	padding: 12px 20px;
+	margin: 16px;
+	min-width: 400px;
+	background-color: #F4F4F4;
+}
+
 
 #clothing
 {

@@ -174,17 +174,10 @@ html,body
 		color: var(--main-green-primary);
 	}
 	.form{
-		max-width: 100px;
+		max-width: 300px;
 		padding: 24px;
 		display: block;
 		margin: 0 auto;
-	}
-	.form input,textarea{
-		border:1px solid #ccc;
-		border-radius: 5px;
-		padding: 12px 20px;
-		margin: 16px;
-		max-width: 100px;
 	}
 }
 
@@ -258,7 +251,7 @@ html,body
 }
 
 .form{
-	max-width: 600px;
+	width: 600px;
 	padding: 24px;
 	display: block;
 	margin: 0 auto;
@@ -268,7 +261,7 @@ html,body
 	border-radius: 5px;
 	padding: 12px 20px;
 	margin: 16px;
-	min-width: 320px;
+	width: 75%;
 	background-color: #F4F4F4;
 }
 .form textarea{
@@ -276,10 +269,9 @@ html,body
 	border-radius: 5px;
 	padding: 12px 20px;
 	margin: 16px;
-	min-width: 400px;
+	width: 100%;
 	background-color: #F4F4F4;
 }
-
 
 #clothing
 {
